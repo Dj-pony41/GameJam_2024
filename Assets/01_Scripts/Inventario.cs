@@ -4,49 +4,60 @@ using UnityEngine.UI;
 
 public class Inventario : MonoBehaviour
 {
-    // Lista de todos los GameObjects que serán gestionados por este script
-    public List<GameObject> gameObjects; // Arrastra los GameObjects desde el Inspector
+    // Lista de balones para arrastrar desde el Inspector
+    public List<GameObject> balls;
+    // El botón correspondiente a cada balón
+    public List<Button> ballButtons;
 
-    // El botón que controlará el GameObject asignado
-    private Button boton;
+    // Variable para almacenar el índice del balón actualmente visible
+    private int currentBallIndex = -1;
 
-    // El índice del GameObject en la lista que se debe mostrar al hacer clic
-    public int indiceAMostrar;
-
-    // Se ejecuta al inicio
     void Start()
     {
-        // Asignar el botón a la variable
-        boton = GetComponent<Button>();
-
-        // Asegurarse de que el botón tenga un listener asignado
-        if (boton != null)
+        // Buscar el balón que esté activo al inicio y guardarlo
+        for (int i = 0; i < balls.Count; i++)
         {
-            // Cuando se hace clic en el botón, ejecuta el método "MostrarOcultarGameObject"
-            boton.onClick.AddListener(MostrarOcultarGameObject);
+            if (balls[i].activeSelf)
+            {
+                currentBallIndex = i;
+                break;
+            }
         }
 
-        // Inicialmente, solo mostrar el GameObject asignado a este botón y ocultar los demás
-        ActualizarVisibilidad();
-    }
-
-    // Método que se ejecutará al hacer clic en el botón
-    void MostrarOcultarGameObject()
-    {
-        // Llamar a la función para actualizar la visibilidad de los objetos
-        ActualizarVisibilidad();
-    }
-
-    // Actualiza la visibilidad de todos los GameObjects de la lista
-    void ActualizarVisibilidad()
-    {
-        for (int i = 0; i < gameObjects.Count; i++)
+        // Si ningún balón está activo al inicio, hacemos visible el primer balón de la lista
+        if (currentBallIndex == -1 && balls.Count > 0)
         {
-            if (gameObjects[i] != null)
-            {
-                // Solo el GameObject en el índice indicado se mostrará, los demás se ocultarán
-                gameObjects[i].SetActive(i == indiceAMostrar);
-            }
+            balls[0].SetActive(true);
+            currentBallIndex = 0;
+        }
+
+        // Asignar el evento de cada botón para seleccionar el balón correspondiente
+        for (int i = 0; i < ballButtons.Count; i++)
+        {
+            int index = i; // Necesario para evitar problemas de cierre sobre la variable i en el lambda
+            ballButtons[i].onClick.AddListener(() => SelectBall(index));
+        }
+    }
+
+    // Función para seleccionar un balón basado en el índice
+    void SelectBall(int index)
+    {
+        if (index != currentBallIndex)
+        {
+            // Obtener la posición del balón actualmente visible
+            Vector3 currentPosition = balls[currentBallIndex].transform.position;
+
+            // Ocultar el balón actual
+            balls[currentBallIndex].SetActive(false);
+
+            // Colocar el nuevo balón en la misma posición que el anterior
+            balls[index].transform.position = currentPosition;
+
+            // Activar el nuevo balón
+            balls[index].SetActive(true);
+
+            // Actualizar el índice del balón actual
+            currentBallIndex = index;
         }
     }
 }
