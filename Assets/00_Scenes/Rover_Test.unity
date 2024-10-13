@@ -189,15 +189,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 832269870, guid: 9b087ad3ee72dbd408584ba96bc2cc57, type: 3}
       propertyPath: assignedPosition.x
-      value: 29.970217
+      value: 35.244755
       objectReference: {fileID: 0}
     - target: {fileID: 832269870, guid: 9b087ad3ee72dbd408584ba96bc2cc57, type: 3}
       propertyPath: assignedPosition.y
-      value: 8.8081875
+      value: 5.59
       objectReference: {fileID: 0}
     - target: {fileID: 832269870, guid: 9b087ad3ee72dbd408584ba96bc2cc57, type: 3}
       propertyPath: assignedPosition.z
-      value: 32.00283
+      value: 35.850803
       objectReference: {fileID: 0}
     - target: {fileID: 3169090002416453430, guid: 9b087ad3ee72dbd408584ba96bc2cc57, type: 3}
       propertyPath: m_Name
