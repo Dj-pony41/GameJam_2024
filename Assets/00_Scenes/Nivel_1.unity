@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.19561613, g: 0.2370655, b: 0.31044632, a: 1}
+  m_IndirectSpecularColor: {r: 0.48237973, g: 0.5273084, b: 0.5964984, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -457,7 +457,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7630090c6a4272b4a82a3ba19815509d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextSceneName: 
+  nextSceneName: Nivel_2
 --- !u!1 &1920357500 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8206076401315885941, guid: d4c261a4958df684ca1806e819b3a357, type: 3}
@@ -617,6 +617,10 @@ PrefabInstance:
       propertyPath: boundaryCollider
       value: 
       objectReference: {fileID: 1564075013}
+    - target: {fileID: 5517048681593415109, guid: 4a68092ddfc77c94bb357a3c31960bc7, type: 3}
+      propertyPath: shotPower
+      value: -150
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4a68092ddfc77c94bb357a3c31960bc7, type: 3}
 --- !u!1001 &7167889617308430784
