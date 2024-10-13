@@ -1,0 +1,158 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8221913542760470975
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5046064557541847553}
+  m_Layer: 0
+  m_Name: Circuito_Rampa
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5046064557541847553
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8221913542760470975}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 10.177536, y: -42.130913, z: 48.477077}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 9120856847784600883}
+  - {fileID: 6551291216451974975}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &5588620062492189384
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5046064557541847553}
+    m_Modifications:
+    - target: {fileID: 1685499583804102135, guid: f2ce0476475bc3d4095375ee3b4d5de9, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1685499583804102135, guid: f2ce0476475bc3d4095375ee3b4d5de9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1685499583804102135, guid: f2ce0476475bc3d4095375ee3b4d5de9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.726
+      objectReference: {fileID: 0}
+    - target: {fileID: 1685499583804102135, guid: f2ce0476475bc3d4095375ee3b4d5de9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.704
+      objectReference: {fileID: 0}
+    - target: {fileID: 1685499583804102135, guid: f2ce0476475bc3d4095375ee3b4d5de9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9659258
+      objectReference: {fileID: 0}
+    - target: {fileID: 1685499583804102135, guid: f2ce0476475bc3d4095375ee3b4d5de9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.2588191
+      objectReference: {fileID: 0}
+    - target: {fileID: 1685499583804102135, guid: f2ce0476475bc3d4095375ee3b4d5de9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1685499583804102135, guid: f2ce0476475bc3d4095375ee3b4d5de9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1685499583804102135, guid: f2ce0476475bc3d4095375ee3b4d5de9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 1685499583804102135, guid: f2ce0476475bc3d4095375ee3b4d5de9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1685499583804102135, guid: f2ce0476475bc3d4095375ee3b4d5de9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3253727329053028875, guid: f2ce0476475bc3d4095375ee3b4d5de9, type: 3}
+      propertyPath: m_Name
+      value: Circuito_modular_1 (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f2ce0476475bc3d4095375ee3b4d5de9, type: 3}
+--- !u!4 &6551291216451974975 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1685499583804102135, guid: f2ce0476475bc3d4095375ee3b4d5de9, type: 3}
+  m_PrefabInstance: {fileID: 5588620062492189384}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7635802635548078276
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5046064557541847553}
+    m_Modifications:
+    - target: {fileID: 1685499583804102135, guid: f2ce0476475bc3d4095375ee3b4d5de9, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1685499583804102135, guid: f2ce0476475bc3d4095375ee3b4d5de9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1685499583804102135, guid: f2ce0476475bc3d4095375ee3b4d5de9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1685499583804102135, guid: f2ce0476475bc3d4095375ee3b4d5de9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.017
+      objectReference: {fileID: 0}
+    - target: {fileID: 1685499583804102135, guid: f2ce0476475bc3d4095375ee3b4d5de9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1685499583804102135, guid: f2ce0476475bc3d4095375ee3b4d5de9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1685499583804102135, guid: f2ce0476475bc3d4095375ee3b4d5de9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1685499583804102135, guid: f2ce0476475bc3d4095375ee3b4d5de9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1685499583804102135, guid: f2ce0476475bc3d4095375ee3b4d5de9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1685499583804102135, guid: f2ce0476475bc3d4095375ee3b4d5de9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1685499583804102135, guid: f2ce0476475bc3d4095375ee3b4d5de9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3253727329053028875, guid: f2ce0476475bc3d4095375ee3b4d5de9, type: 3}
+      propertyPath: m_Name
+      value: Circuito_modular_1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f2ce0476475bc3d4095375ee3b4d5de9, type: 3}
+--- !u!4 &9120856847784600883 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1685499583804102135, guid: f2ce0476475bc3d4095375ee3b4d5de9, type: 3}
+  m_PrefabInstance: {fileID: 7635802635548078276}
+  m_PrefabAsset: {fileID: 0}
