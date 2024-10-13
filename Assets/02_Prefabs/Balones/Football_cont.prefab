@@ -15,7 +15,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &3452302866798152168
 Transform:
   m_ObjectHideFlags: 0
@@ -136,7 +136,7 @@ MonoBehaviour:
   followSpeed: 5
   initialDistanceFromTarget: 5
   manualControlDuration: 1.5
-  target: {fileID: 0}
+  target: {fileID: 6337690850988412969}
 --- !u!1001 &5517048682776844160
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -220,6 +220,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ddfbdff96b1ceda44b3c9073408c2f5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  assignedPosition: {x: 28.70064, y: 2.3348708, z: 43.479145}
+  assignedPosition: {x: 31.05, y: 2.579, z: 66.39}
   stationaryThreshold: 1
   boundaryCollider: {fileID: 0}
+--- !u!114 &6710182821875253371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8909595858812225430}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7630090c6a4272b4a82a3ba19815509d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextSceneName: 

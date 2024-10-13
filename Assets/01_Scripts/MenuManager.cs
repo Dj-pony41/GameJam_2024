@@ -59,6 +59,19 @@ public class MenuManager : MonoBehaviour
     // Método para cargar la escena del juego
     public void ScenaJuego()
     {
-        SceneManager.LoadScene("Jorge_Test");
+        SceneManager.LoadScene("Nivel_1");
+    }
+
+    public void Nivel1()
+    {
+        SceneManager.LoadScene("Nivel_1");
+    }
+    public void Nivel2()
+    {
+        SceneManager.LoadScene("Nivel_2");
+    }
+    public void Nivel3()
+    {
+        SceneManager.LoadScene("Nivel_3");
     }
 }
